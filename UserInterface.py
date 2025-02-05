@@ -1,6 +1,7 @@
 from groq import Groq
 import pandas as pd
 import kaggle
+import PatternData
 
 # Download latest version
 #path = kaggle.dataset_download("borismarjanovic/price-volume-data-for-all-us-stocks-etfs")
