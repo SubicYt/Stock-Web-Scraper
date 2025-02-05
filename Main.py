@@ -4,3 +4,4 @@ print("text")
 web=[]
 if web==[]:
     web.append(2)
+print('lalala')
