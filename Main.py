@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup as BS
 import requests
+"""TODO: Start Version 1.0"""
 
 page_to_scrape = requests.get("https://www.capitoltrades.com/trades")
 soup = BS(page_to_scrape.text, "html.parser")
