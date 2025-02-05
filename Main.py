@@ -1,7 +1,11 @@
+from bs4 import BeautifulSoup as BS
+import requests
 
-print("Hello")
-print('hello')
-print("text")
-web=[]
-print('lalala')
+page_to_scrape = requests.get("https://www.capitoltrades.com/trades")
+soup = BS(page_to_scrape.text, "html.parser")
+quotes = soup.find_all("a", attrs = {"class": "text-txt-interactive"})
+
+for quote in quotes:
+    print(quote.text)
+
 
