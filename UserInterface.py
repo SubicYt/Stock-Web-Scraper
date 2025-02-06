@@ -1,7 +1,7 @@
 from groq import Groq
 import pandas as pd
 import kaggle
-import PatternData
+#cleaimport PatternData
 
 # Download latest version
 #path = kaggle.dataset_download("borismarjanovic/price-volume-data-for-all-us-stocks-etfs")
@@ -43,14 +43,13 @@ def chat_with_model():
                     temperature=1,
 
                     #The maximum number of tokens to generate. 
-                    #Requests can use up to 32768 tokens shared between prompt and completion.
+                    #Requests can use up to 0-32768 tokens shared between prompt and completion.
                     max_completion_tokens=1024,
 
                     #Controls diversity via nucleus sampling: 
                     # 0.5 means half of all likelihood-weighted options are considered.
                     top_p=1,
 
-                    stream=True,
                     
                     stop="exit",
             )
